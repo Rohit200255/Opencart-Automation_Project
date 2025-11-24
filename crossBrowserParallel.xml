@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite" parallel="tests" >-->
+<!--For PARALLEL EXECUTION  put parallel="tests in <suite/>-->
+
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2"  name="TC001_Register.java" parallel="tests">
+<!--        FOR CROSS BROWSER SERIAL EXECUTION : put parallel="tests in <test/>   -->
+
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="windows"/>
+        <classes>
+            <class name="testCases.TC001_Register"/>
+            <class name="testCases.TC002_Login"/>
+        </classes>
+    </test>
+    <test verbose="2"  name="TC002_Login.java">
+        <parameter name="browser" value="edge"/>
+        <parameter name="os" value="windows"/>
+        <classes>
+            <class name="testCases.TC001_Register"/>
+            <class name="testCases.TC002_Login"/>
+        </classes>
+    </test>
+</suite>

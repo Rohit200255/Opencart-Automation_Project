@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/hp/Desktop/untitled1/src/test/java/testCases/TC002_Login.java">
+      <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+       <groups>
+           <run>
+               <include name="sanitary"/>
+<!--               <exclude name="master"/>-->
+               <include name="dataDriven"/>
+           </run>
+       </groups>
+
+        <classes>
+            <class name="testCases.TC001_Register"/>
+            <class name="testCases.TC002_Login"/>
+            <class name="testCases.TC003_LoginDDT"/>
+        </classes>
+    </test>
+</suite>
