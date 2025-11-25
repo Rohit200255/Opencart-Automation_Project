@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" >
     <listeners>
         <listener class-name="utilities.ExtentReportManager"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="TC002_Login.java">
-       <parameter name="browser" value="chrome"/>
+    <test verbose="2" name="TC002_LoginChrome.java">
+        <parameter name="browser" value="chrome"/>
         <parameter name="os" value="windows"/>
         <groups>
             <run>
@@ -17,7 +17,23 @@
         <classes>
             <class name="testCases.TC001_Register"/>
             <class name="testCases.TC002_Login"/>
-            <class name="testCases.TC003_LoginDDT"/>
         </classes>
     </test>
+    <test verbose="2"  name="TC002_LoginEdge.java">
+        <parameter name="browser" value="edge"/>
+        <parameter name="os" value="windows"/>
+        <groups>
+            <run>
+                <include name="sanitary"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testCases.TC001_Register"/>
+            <class name="testCases.TC002_Login"/>
+
+        </classes>
+    </test>
+
 </suite>

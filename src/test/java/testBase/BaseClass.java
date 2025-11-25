@@ -61,7 +61,8 @@ public class BaseClass {
 
             switch (br.toLowerCase()){
                 case "chrome" : cap.setBrowserName("chrome"); break;
-                case "edge" : cap.setBrowserName("Microsoft Edge"); break;
+                case "edge" : cap.setBrowserName("MicrosoftEdge"); break;
+                case "firefox": cap.setBrowserName("firefox"); break;
                 default:
                     System.out.println("Provide valid Brwoser Name...");
                     return;
