@@ -9,7 +9,7 @@
         <parameter name="browser" value="chrome"/>
        <groups>
            <run>
-               <include name="sanitary"/>
+               <include name="sanity"/>
 <!--               <exclude name="master"/>-->
                <include name="dataDriven"/>
            </run>

@@ -9,7 +9,7 @@
         <parameter name="os" value="windows"/>
         <groups>
             <run>
-                <include name="sanitary"/>
+                <include name="sanity"/>
                 <include name="regression"/>
             </run>
         </groups>
@@ -24,7 +24,7 @@
         <parameter name="os" value="windows"/>
         <groups>
             <run>
-                <include name="sanitary"/>
+                <include name="sanity"/>
                 <include name="regression"/>
             </run>
         </groups>

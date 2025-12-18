@@ -9,7 +9,7 @@
         <parameter name="os" value="windows"/>
         <groups>
             <run>
-                <include name="sanitary"/>
+                <include name="sanity"/>
                 <include name="regression"/>
 <!--                               <exclude name="master"/>-->
 <!--                <include name="dataDriven"/>-->

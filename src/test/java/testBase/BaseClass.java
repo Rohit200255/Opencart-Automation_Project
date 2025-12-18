@@ -31,7 +31,7 @@ public class BaseClass {
     public Logger logger;
     public Properties p;
 
-    @BeforeClass(groups = {"sanitary", "regression", "master","dataDriven"})
+    @BeforeClass(groups = {"sanity", "regression", "master","dataDriven"})
     @Parameters({"os", "browser"})
     public void setup(String os, String br) throws IOException {
 
